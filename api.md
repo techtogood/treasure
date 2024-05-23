@@ -247,11 +247,11 @@ if (!response.status) {
                            ┌──────────┴──────────┐
                        HTTP 成功(200-300)     HTTP 异常
                            │                     |
-               {data, status, statusInfo}        H${HTTP status} 例如: H404
+               {data, status, tip}        H${HTTP status} 例如: H404
                ┌───────────┴───────────┐
           接口调用成功(status:0)   接口调用失败
       ┌────────┴────────┐              |
-客户端处理出错      客户端处理正常       B${status}${statusInfo.message} 例如: B100
+客户端处理出错      客户端处理正常       B${status}${tip} 例如: B100
       |
       C 例如: C100
 
